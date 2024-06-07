@@ -1,0 +1,131 @@
+/* SubscriptionPlans.css */
+/* .subscription-container {
+    text-align: center;
+    padding: 0px;
+    background-color: #000;
+    color: #fff;
+} */
+
+.heading {
+    font-size: 2em;
+    margin-bottom: 50px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.blue-text {
+    color: #007bff;
+}
+
+.subscription-plans {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.plan {
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    min-height: 450px;
+    text-align: center;
+    position: relative;
+    background-color: #101010;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    cursor: pointer;
+    z-index: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.plan.selected {
+    border-color: #28a745;
+    z-index: 1;
+}
+
+.best-offer {
+    border-color: #ff9800;
+    background-color: #2d2d2d;
+}
+
+.plan-title {
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #000;
+    font-weight: bold;
+}
+
+.plan-price {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.plan-details {
+    font-size: 1em;
+    color: #ccc;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .subscription-container {
+        padding: 10px;
+    }
+
+    .heading {
+        font-size: 1.5em;
+    }
+
+    .plan {
+        width: 100%;
+        max-width: 350px;
+        min-height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .plan-title {
+        font-size: 1.2em;
+    }
+
+    .plan-price {
+        font-size: 1.2em;
+    }
+
+    .plan-details {
+        font-size: 0.9em;
+    }
+
+    .subscription-plans {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 1.2em;
+    }
+
+    .plan {
+        padding: 15px;
+        width: 100%;
+        max-width: 300px;
+        min-height: 250px;
+    }
+
+    .plan-title {
+        font-size: 1.1em;
+    }
+
+    .plan-price {
+        font-size: 1em;
+    }
+
+    .plan-details {
+        font-size: 0.85em;
+    }
+}

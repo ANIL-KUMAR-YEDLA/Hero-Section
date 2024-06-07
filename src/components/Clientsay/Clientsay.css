@@ -1,0 +1,133 @@
+/* Clientsay.css */
+.clientsay-container {
+  background-color: #000;
+  color: white;
+  height: 687px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.clientsay-content {
+  max-width: 1200px;
+  text-align: center;
+  position: relative;
+}
+
+.quote-mark {
+  font-size: 200px;
+  color: #1473E6;
+  position: absolute;
+}
+
+.left-quote {
+  top: 120px;
+  left: 0;
+}
+
+.right-quote {
+  bottom: auto;
+  right: 0;
+}
+
+.clientsay-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #1473E6;
+}
+
+.client-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.client-image {
+  width: 116px;
+  height: 116px;
+  margin-bottom: 10px;
+}
+
+.client-name {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.client-title {
+  font-size: 16px;
+  opacity: 0.41;
+}
+
+.client-feedback {
+  font-size: 16px;
+  opacity: 0.51;
+  margin-top: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .clientsay-container {
+    height: auto;
+    padding: 20px;
+  }
+
+  .clientsay-content {
+    padding: 20px;
+  }
+  .left-quote{
+    top: 170px;
+  }
+
+  .quote-mark {
+    font-size: 100px;
+  }
+
+  .clientsay-heading {
+    font-size: 24px;
+  }
+
+  .client-name {
+    font-size: 24px;
+  }
+
+  .client-title {
+    font-size: 14px;
+  }
+
+  .client-feedback {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-mark {
+    display: none;
+  }
+
+  .clientsay-heading {
+    font-size: 20px;
+  }
+
+  .client-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .client-name {
+    font-size: 20px;
+  }
+
+  .client-title {
+    font-size: 12px;
+  }
+
+  .client-feedback {
+    font-size: 12px;
+  }
+}
