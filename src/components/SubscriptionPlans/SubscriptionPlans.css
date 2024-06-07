@@ -1,14 +1,13 @@
-/* SubscriptionPlans.css */
 /* .subscription-container {
     text-align: center;
     padding: 0px;
     background-color: #000;
     color: #fff;
-} */
+}
 
 .heading {
     font-size: 2em;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     color: #fff;
     letter-spacing: 1px;
 }
@@ -59,10 +58,21 @@
     color: #000;
     font-weight: bold;
 }
+.plan-title1, .plan-title2, .plan-title3 {
+    position: absolute;
+    top: -20px;
+}
+.plan-title2 {
+    right: 94px;
+}
+.plan-title1, .plan-title3 {
+    right: 50px;
+}
 
 .plan-price {
     font-size: 1.5em;
     margin: 20px 0;
+    margin-top: 50px;
 }
 
 .plan-details {
@@ -70,12 +80,42 @@
     color: #ccc;
 }
 
-/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    .subscription-container {
+        padding: 10px;
+        position: relative;
+        left: 80px;
+    }
+    .heading {
+        font-size: 1.8em;
+    }
+
+    .plan-title1, .plan-title2, .plan-title3 {
+        top: -15px;
+    }
+
+    .plan-title2 {
+        right: 80px;
+    }
+
+    .plan {
+        max-width: 280px;
+        min-height: 350px;
+    }
+
+    .plan-price {
+        margin-top: 40px;
+    }
+}
+
 @media (max-width: 768px) {
     .subscription-container {
         padding: 10px;
+        position: relative;
+        left: 140px;
     }
 
+    
     .heading {
         font-size: 1.5em;
     }
@@ -86,9 +126,19 @@
         min-height: 300px;
         margin-bottom: 20px;
     }
+    .heading{
+        margin-bottom: 60px;
+        margin-top: 30px;
+    }
 
     .plan-title {
         font-size: 1.2em;
+    }
+    .plan-title2 {
+        right: 110px;
+    }
+    .plan-title3 {
+        right: 65px;
     }
 
     .plan-price {
@@ -106,19 +156,34 @@
 }
 
 @media (max-width: 480px) {
+    .subscription-container {
+        padding: 10px;
+        position: relative;
+        left: 340px;
+    }
     .heading {
-        font-size: 1.2em;
+        font-size: 2.2em;
+        left: -40px;
     }
 
     .plan {
         padding: 15px;
         width: 100%;
         max-width: 300px;
-        min-height: 250px;
+        min-height: 300px;
     }
 
     .plan-title {
         font-size: 1.1em;
+    }
+    .plan-title2 {
+        right: 90px;
+    }
+    .plan-title1 {
+        right: 40px;
+    }
+    .plan-title3 {
+        right: 45px;
     }
 
     .plan-price {
@@ -129,3 +194,30 @@
         font-size: 0.85em;
     }
 }
+@media (max-width: 320px) {
+    .subscription-container {
+        padding: 10px;
+        position: relative;
+        left: 340px;
+    }
+    .heading {
+        font-size: 2.2em;
+    }
+    .plan{
+        width: 500px;
+        height: 300px;
+    }
+    
+} */
+
+
+.two{
+    right: 60px;
+}
+
+@media (max-width: 768px) {
+    .subscription-plans {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
